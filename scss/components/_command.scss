@@ -1,0 +1,54 @@
+.workers-section {
+	text-align: center;
+}
+.section {
+}
+.container {
+}
+.workers-section__title {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 33px;
+	letter-spacing: 0.03em;
+
+	color: #212121;
+}
+.workers-section__list {
+}
+.workers {
+}
+.workers__card {
+}
+.workers-card {
+}
+.workers-card__content {
+	font-size: 16px;
+	line-height: 1.2;
+}
+.workers-card__name {
+	@extend .workers-card__content;
+	font-weight: 500;
+	color: $secondary-text-color;
+}
+.workers-card__position {
+}
+.workers-card__media {
+	display: flex;
+}
+.card-media {
+}
+.card-media__item:not(:first-child) {
+	margin-left: 10px;
+}
+.card-media__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: $brand-color;
+}
+.icon {
+}

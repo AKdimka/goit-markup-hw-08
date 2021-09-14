@@ -1,0 +1,28 @@
+.hero {
+	background-color: $secondary-bg;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 118px;
+	padding-bottom: 118px;
+}
+.container {
+}
+.hero__title {
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 42px;
+	margin-right: auto;
+	margin-left: auto;
+
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	color: $bg-color;
+}
+.hero__btn {
+	@extend.btn;
+	margin-top: 30px;
+}
