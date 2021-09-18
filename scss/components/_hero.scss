@@ -1,28 +1,25 @@
 .hero {
+	text-align: center;
+	padding-top: 118px;
+	padding-bottom: 118px;
+
 	background-color: $secondary-bg;
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	text-align: center;
-	padding-top: 118px;
-	padding-bottom: 118px;
-}
-.container {
 }
 .hero__title {
 	font-weight: 900;
 	font-size: 26px;
-	line-height: 42px;
+	line-height: 1.36;
+
 	margin-right: auto;
 	margin-left: auto;
-
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-
 	color: $bg-color;
 }
-.hero__btn {
-	@extend.btn;
+.hero__button {
 	margin-top: 30px;
 }

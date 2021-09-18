@@ -1,0 +1,37 @@
+.section--no-padding-top {
+	padding-top: 0;
+}
+@media screen and (max-width: $desktop - 1) {
+	.section--no-padding-top {
+		display: none;
+	}
+}
+.skills {
+	display: flex;
+	margin-top: 50px;
+}
+.skills__item {
+	position: relative;
+	&:not(:first-child) {
+		margin-left: $item-gap;
+	}
+}
+.skill-section__img {
+}
+.skills__label {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 27px 0;
+	background: rgba(47, 48, 58, 0.8);
+}
+.skills__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: $bg-color;
+}

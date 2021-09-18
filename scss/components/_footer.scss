@@ -1,0 +1,74 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: $secondary-bg;
+}
+.footer__container {
+	display: flex;
+	align-items: baseline;
+}
+.logo--contrast {
+	color: $bg-color;
+}
+.address {
+	margin-top: 20px;
+}
+.address__item:not(:first-child) {
+	margin-top: 9px;
+}
+.address__link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+
+	color: rgba(255, 255, 255, 0.6);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__link--street {
+	color: $bg-color;
+}
+.join-box {
+	margin-left: 70px;
+}
+.join-box__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+
+	color: $bg-color;
+}
+/* _socials.scss */
+.subscribe-box {
+	margin-left: 70px;
+}
+.subscribe-box__title {
+	font-style: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+
+	color: $bg-color;
+}
+.subscribe-box__form {
+	display: flex;
+	margin-top: 20px;
+	flex-direction: row;
+	align-items: baseline;
+}
+.subscribe-box__input {
+	width: 358px;
+	padding: 15px 16px;
+
+	background: inherit;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
+.subscribe-box__btn {
+	display: flex;
+	margin-left: 12px;
+}
+.subscribe-box__btn-svg {
+	margin-left: 10px;
+}

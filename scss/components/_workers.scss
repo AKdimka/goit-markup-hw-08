@@ -1,0 +1,34 @@
+.section--bg-gray {
+	background: $third-bg;
+	text-align: center;
+}
+.workers {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.workers__card {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	overflow: hidden;
+	&:not(:first-child) {
+		margin-top: $item-gap;
+	}
+}
+.workers__content {
+	padding-top: 30px;
+	padding-bottom: 24px;
+	background-color: $bg-color;
+}
+.workers__name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	color: $secondary-text-color;
+}
+.workers__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+	margin-top: 10px;
+}

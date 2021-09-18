@@ -1,15 +1,15 @@
-@import "utils/breakpoint";
-@import "utils/colors";
-@import "utils/utils";
-
+@import "utils/breakpoints";
+@import "utils/variables";
+@import "utils/nul-style";
 @import "components/logo";
 @import "components/header";
 @import "components/hero";
+@import "components/modal";
 @import "components/features";
 @import "components/skill";
-@import "components/command";
+@import "components/workers";
+@import "components/socials";
 @import "components/clients";
 @import "components/footer";
-
 @import "components/filter";
 @import "components/projects";
