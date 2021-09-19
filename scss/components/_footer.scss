@@ -5,13 +5,36 @@
 }
 .footer__container {
 	display: flex;
-	align-items: baseline;
+	flex-direction: column;
+	justify-content: center;
+}
+@media screen and (min-width:$tablet) and (max-width:$desktop - 1){
+	.footer__container{
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+}
+@media screen and (min-width:$desktop){
+	.footer__container{
+		flex-direction: row;
+		justify-content: space-between
+	}
+}
+.footer__contacts{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .logo--contrast {
 	color: $bg-color;
 }
 .address {
 	margin-top: 20px;
+}
+.address__list{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .address__item:not(:first-child) {
 	margin-top: 9px;
@@ -29,7 +52,20 @@
 	color: $bg-color;
 }
 .join-box {
-	margin-left: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media screen and(max-width: $tablet - 1) {
+	.join-box {
+		margin-top: 60px;
+	}
+}
+@media screen and(min-width: $tablet) and (max-width:$desktop - 1) {
+	.join-box {
+		margin-top: 0;
+		margin-left: 165px;
+	}
 }
 .join-box__title {
 	font-weight: 700;
@@ -41,7 +77,18 @@
 }
 /* _socials.scss */
 .subscribe-box {
-	margin-left: 70px;
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (max-width:$desktop - 1){
+	.subscribe-box {
+		margin-top: 60px;
+		align-items: center;
+	}
+	.subscribe-box__btn{
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 .subscribe-box__title {
 	font-style: normal;
@@ -52,23 +99,39 @@
 }
 .subscribe-box__form {
 	display: flex;
+	flex-direction: column;
 	margin-top: 20px;
-	flex-direction: row;
-	align-items: baseline;
 }
 .subscribe-box__input {
-	width: 358px;
+	width: 450px;
 	padding: 15px 16px;
 
-	background: inherit;
+	background-color: inherit;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 }
 .subscribe-box__btn {
 	display: flex;
-	margin-left: 12px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
 }
+
 .subscribe-box__btn-svg {
 	margin-left: 10px;
+}
+@media screen and (min-width:$desktop){
+	.subscribe-box__input {
+		width: 358px;
+	}
+	.subscribe-box__form {
+		display: flex;
+		flex-direction: row;
+		margin-top: 20px;
+	}
+	.subscribe-box__btn {
+		margin-top: 0;
+		margin-left: 20px;
+	}
 }

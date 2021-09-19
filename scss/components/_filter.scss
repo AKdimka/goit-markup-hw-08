@@ -3,6 +3,11 @@
 	justify-content: center;
 	margin-bottom: 50px;
 }
+@media screen and (max-width:$tablet){
+	.filter{
+		flex-wrap: wrap;
+	}
+}
 .filter__item:not(:first-child) {
 	margin-left: 8px;
 }

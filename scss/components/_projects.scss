@@ -1,14 +1,12 @@
 .projects {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: -1 * $item-gap;
-	margin-left: -1 * $item-gap;
 }
 .projects__item {
-	margin-top: $item-gap;
-	margin-left: $item-gap;
-
-	flex-basis: (1200px - ($item-gap * 3)) / 3;
+	flex-basis: $mobile - 30px;
+	&:not(:first-child){
+		margin-top: $item-gap;
+	}
 }
 .project__link {
 	display: block;
@@ -63,5 +61,25 @@
 	.project__link:hover &,
 	.project__link:focus & {
 		transform: translateY(0);
+	}
+}
+@media screen and (min-width: $tablet) {
+	.projects {
+		margin-top: -1 * $item-gap;
+		margin-left: -1 * $item-gap;
+	}
+	.projects__item {
+		margin-top: $item-gap;
+		margin-left: $item-gap;
+		flex-basis: ($tablet - 60px) / 2;
+	}
+}
+@media screen and (min-width: $desktop) {
+	.projects {
+		margin-top: -1 * $item-gap;
+		margin-left: -1 * $item-gap;
+	}
+	.projects__item {
+		flex-basis: (1200px - ($item-gap * 3)) / 3;
 	}
 }
