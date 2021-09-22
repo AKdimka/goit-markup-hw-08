@@ -11,7 +11,7 @@
 		}
 	}
 }
-@media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
 	.features {
 		margin-top: (-1 * $item-gap);
 		margin-left: (-1 * $item-gap);
@@ -33,11 +33,14 @@
 .features__thumb {
 	display: flex;
 	justify-content: center;
-	padding: 25px 0;
+	align-items: center;
+	height: 120px;
 	background: $third-bg;
 	border-radius: 4px;
 }
 .features__svg {
+	width: 70px;
+	height: 70px;
 }
 .features__title {
 	font-weight: 700;

@@ -25,31 +25,31 @@ body {
 	font-size: 14px;
 }
 .container {
-	width: 480px;
 	padding-left: 15px;
 	padding-right: 15px;
 
 	margin-left: auto;
 	margin-right: auto;
-}
-@media screen and (max-width: $tablet - 1) {
-	.container {
-		max-width: $mobile;
+
+	@media screen and (min-width: $mobile) {
+		width: $mobile;
+		align-items: center;
 	}
-}
-@media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
-	.container {
+	@media screen and (min-width: $tablet) {
 		width: $tablet;
 	}
-}
-@media screen and(min-width:$desktop) {
-	.container {
+	@media screen and (min-width: $desktop) {
 		width: $desktop;
 	}
 }
+
 .section {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	@media screen and (min-width: $desktop) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 .section__title {
 	font-weight: 700;
@@ -90,6 +90,20 @@ body {
 	&:hover,
 	&:focus {
 		background-color: $btn-second;
+	}
+}
+.close-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	&:hover,
+	&:focus {
+		fill: $brand-color;
 	}
 }
 .visibility-hiden {

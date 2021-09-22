@@ -1,17 +1,32 @@
 .clients {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+
+	@media screen and (max-width: $desktop) {
+		margin-top: -1 * 30px;
+		margin-left: -1 * 30px;
+	}
+	@media screen and (min-width: $desktop) {
+		justify-content: space-between;
+	}
 }
-.section__title--margin-bottom {
-	margin-bottom: 30px;
+.clients__item {
+	@media screen and (max-width: $desktop) {
+		margin-top: 30px;
+		margin-left: 30px;
+	}
 }
 .clients__link {
 	display: flex;
-	padding: 16px 50px;
-
+	align-items: center;
+	justify-content: center;
 	fill: #afb1b8;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
+
+	height: 92px;
+	width: 210px;
 
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:focus,
@@ -19,34 +34,15 @@
 		fill: $brand-color;
 		border-color: $brand-color;
 	}
-}
-@media screen and (max-width: $desktop - 1) {
-	.clients {
-		margin-top: -1 * 30px;
-		margin-left: -1 * 30px;
+	@media screen and (min-width: $tablet) {
+		width: 226px;
 	}
-	.clients__item {
-		margin-top: 30px;
-		margin-left: 30px;
+	@media screen and (min-width: $desktop) {
+		width: 170px;
 	}
 }
-@media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
-	.clients__link {
-		padding: 16px 58px;
-	}
-}
-@media screen and (min-width: $desktop) {
-	.section__title--margin-bottom {
-		margin-bottom: 50px;
-	}
-	.clients__item {
-		&:not(:first-child) {
-			margin-left: 30px;
-		}
-	}
-	.clients__link {
-		padding: 16px 30px;
-	}
-}
+
 .clients__logo {
+	width: 106px;
+	height: 60px;
 }
