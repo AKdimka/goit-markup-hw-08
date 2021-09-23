@@ -12,6 +12,7 @@
 	.footer__container {
 		flex-wrap: wrap;
 		flex-direction: row;
+		align-items: flex-start
 	}
 }
 @media screen and (min-width: $desktop) {

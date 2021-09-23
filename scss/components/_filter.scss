@@ -17,6 +17,11 @@
 			margin-top: 15px;
 		}
 	}
+	@media screen and (max-width: 381px) {
+		&:nth-last-of-type(-n + 3) {
+			margin-top: 15px;
+		}
+	}
 }
 .filter__btn {
 	cursor: pointer;
